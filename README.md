@@ -1,4 +1,8 @@
-'''
+## Compare
+
+Example:
+
+```
 $> import Compare
 
 $> compare("hihellothere","reddit")
@@ -28,4 +32,4 @@ $> sort(list, :descend)
 
 $> sort(list, :ascend, :alphabetical)
 ["bird","cat","doggy","elephant"]
-'''
+```
