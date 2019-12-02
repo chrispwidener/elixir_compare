@@ -1,21 +1,31 @@
-# Compare
+'''
+$> import Compare
 
-**TODO: Add description**
+$> compare("hihellothere","reddit")
+GT
 
-## Installation
+$> compare("hihellothere", "reddit", :alphabetical)
+LT
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `compare` to your list of dependencies in `mix.exs`:
+$> compare("hello", "hello")
+EQ
 
-```elixir
-def deps do
-  [
-    {:compare, "~> 0.1.0"}
-  ]
-end
-```
+$> list = [3,2,5,7,9,4,1,6,8]
+[3,2,5,7,9,4,1,6,8]
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/compare](https://hexdocs.pm/compare).
+$> sort(list)
+[1,2,3,4,5,6,7,8,9]
 
+$> sort(list, :descend)
+[9,8,7,6,5,4,3,2,1]
+
+$> list = ["elephant","doggy","cat","bird"]
+$> sort(list)
+["cat","bird","doggy","elephant",]
+
+$> sort(list, :descend)
+["elephant","doggy","bird","cat",]
+
+$> sort(list, :ascend, :alphabetical)
+["bird","cat","doggy","elephant"]
+'''
